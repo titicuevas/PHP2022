@@ -11,40 +11,25 @@
 <body>
 
     <?php
+require 'auxiliar.php';
+
+
+
 
     $op1 = trim($_GET['op1']);
     $op = trim($_GET['op']);
     $op2 = trim($_GET['op2']);
 
-    switch ($op) {
-        case '+':
-            $res = $op1 + $op2;
-            break;
-
-        case '-':
-            $res = $op1 - $op2;
-            break;
-        case '*':
-            $res = $op1 * $op2;
-            break;
-
-        case '/':
-            $res = $op1 / $op2;
-            break;
-
-        default:
-            $res  ='Error operacion incorrecta';
-            break;
-    }
+    $res = calcular_resultado($op1, $op, $op2);
 
 
-   
+
 
     ?>
 
-<p>El resultado de <?= $op1 ,$op ,$op2?> es <?= $res?>  </p>
+    <p>El resultado de <?= $op1, $op, $op2 ?> es <?= $res ?> </p>
 
-    <button >Volver</button>
+    <a href="calculadora.html"><button>Volver</button></a>
 </body>
 
 </html>
