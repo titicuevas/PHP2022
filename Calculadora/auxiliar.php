@@ -22,6 +22,8 @@
  */
 
 
+
+ 
 function calcular_resultado($oper1,$oper,$oper2)
 {
 
