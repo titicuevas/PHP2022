@@ -1,0 +1,19 @@
+time() te muestra los segundos que paso desde el 1/1/70 
+date() Muestra la fecha
+-------------------------
+Y-> Año completo 2022
+y->Ultimos 2 dijitos 22
+y d -> año y dia 22 07
+y j -> año y dia sin el 0 22 7
+Y-m-d -> Año mes y dia 2022-10-07
+Y-m-d D -> Año mes dia y dia de la semana 2022-10-07 Friday
+Y-m-d H -> Año mes dia y hora 24h 
+Y-m-d H:i -> Año mes dia y hora 24h y minutos 
+Y-m-d H:i: -> Año mes dia y hora 24h , minutos y segundos ES EL FORMATO QUE UTILIZAREMOS
+
+$fecha = new DateTime() -> Fecha y hora completa en Formato ISO 24h 
+new DateTimeZone('Europe/Madrid')-> Nos da la zona horaria que le pasemos
+$dos_dias = new DateTimeInterval('P2D');->Dos dias mas 
+$fecha->add($dos_dias)->Suma 2 dias mas de la fecha
+
+----------------------------
