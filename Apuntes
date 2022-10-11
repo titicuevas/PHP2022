@@ -17,3 +17,23 @@ $dos_dias = new DateTimeInterval('P2D');->Dos dias mas
 $fecha->add($dos_dias)->Suma 2 dias mas de la fecha
 
 ----------------------------
+Excepciones
+
+
+--------------
+Crear Base de Datos
+
+Instalar postgress -> sudo apt install postgresql
+
+Comprobar que ha arrancado el postgresql -> sudo systemctl status postgresql.service
+
+Convertise en el usuario postgresql y ver las bases de datos -> sudo -u postgres psql -l 
+
+Crear usuario base de datos -> sudo -u postgres createuser -P empresa
+
+Crear base de datos -> sudo -u postgres createdb  empresa
+
+
+Acceder a la base de datos-> psql -h localhost -d empresa -U empresa    
+
+
