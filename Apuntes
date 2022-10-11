@@ -36,4 +36,4 @@ Crear base de datos -> sudo -u postgres createdb  empresa
 
 Acceder a la base de datos-> psql -h localhost -d empresa -U empresa    
 
-
+Instalar-> sudo apt install php8.1-pdo php8.1-pgsql php8.1-intl php8.1-xml php8.1-zip
