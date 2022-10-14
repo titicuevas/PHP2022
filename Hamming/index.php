@@ -17,6 +17,10 @@ $segunda = strlen($_GET['segunda']);
 $resultado = 
 $distancia = 0;
 
+if (!is_string($primero)&& !is_string($segunda)) {
+    
+}
+
 for ($i=0; $i <$primera ; $primera++) { 
     
     if (primera[$i]!=$segunda[$i]) {
